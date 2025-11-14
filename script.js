@@ -12,8 +12,6 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
 // Navigation Bar
 let lastScrollTop = 0;
     const navbar = document.querySelector("header");
-
-
     window.addEventListener("scroll", function() {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -27,4 +25,5 @@ let lastScrollTop = 0;
 
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
+
 

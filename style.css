@@ -246,28 +246,6 @@ footer {
   color: #5c4d41;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image {
-    width: 90%;
-    height: auto;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin: 10px;
-  }
-}
-
-
-
 .btn{
   margin-top: 5px;
   font-size:20px;
@@ -286,3 +264,56 @@ margin-top:-5%;
 }
 
 
+
+/* Hamburger */
+.hamburger {
+  display:none;
+  flex-direction:column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background:#2e1c14;
+  margin: 4px 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  nav {
+    position:absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background:#e0eafc;
+    flex-direction:column;
+    display:none;
+    box-shadow: 0 10px 15px rgba( 0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  nav a{
+    text-align:center;
+    padding: 15px 0;
+  }
+
+nav.show {
+  display:flex;
+}
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    width: 90%;
+    height:250px;
+  }
+
+  .follow{
+    margin-left: 100px;
+  }
+}

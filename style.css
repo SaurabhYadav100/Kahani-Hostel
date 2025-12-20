@@ -305,6 +305,7 @@ nav.show {
 
   .hamburger {
     display: flex;
+    margin-right: -20px;
   }
 
   .hero-image {
@@ -316,4 +317,9 @@ nav.show {
   .follow{
     margin-left: 100px;
   }
+
+  .logo{
+    margin-left: -20px;
+  }
 }
+
